@@ -176,6 +176,7 @@ h1 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 14px;
   margin-top: 30px;
 }
@@ -198,9 +199,12 @@ h1 {
 }
 
 .button.primary {
-  color: #121318;
-  background: linear-gradient(180deg, #f2cb5f 0%, var(--gold) 100%);
-  box-shadow: 0 12px 24px rgba(227, 184, 59, 0.28);
+  color: var(--text);
+  border: 1px solid rgba(227, 184, 59, 0.36);
+  background:
+    linear-gradient(180deg, rgba(227, 184, 59, 0.14), rgba(227, 184, 59, 0.06)),
+    rgba(8, 10, 16, 0.9);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
 }
 
 .button.secondary {
@@ -234,7 +238,11 @@ h1 {
 .app-store-badge svg {
   width: 28px;
   height: 28px;
-  fill: currentColor;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
   flex: 0 0 auto;
 }
 
