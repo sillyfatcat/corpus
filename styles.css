@@ -303,6 +303,7 @@ p {
 
 .section {
   padding-top: 24px;
+  margin-top: 8px;
 }
 
 .section-heading {
